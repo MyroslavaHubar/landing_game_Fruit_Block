@@ -2,7 +2,7 @@ import './js/about';
 import './js/benefits';
 import './js/disclaimer';
 import './js/footer';
-import './js/fqa';
+import './js/faq';
 import './js/gallery';
 import './js/header';
 import './js/home';
