@@ -4,8 +4,9 @@
 }
 
 .header-nav-mob {
-  display: flex;
-  justify-content: space-between;
+  @include media(desktop) {
+    display: none;
+  }
 }
 .header-logo {
 }
@@ -35,9 +36,43 @@
 }
 
 .header-nav-desk {
-  @include media(mobile) {
-    display: none;
+  // @include media(mobile) {
+  //   display: none;
+  // }
+
+  // @include media(desktop) {
+  //   display: unset;
+  // }
+}
+
+.head-nav-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  border-right: 1px solid black;
+
+  padding-right: 24px;
+}
+
+.header-logo-desk {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
   }
+}
+
+.header-nav-desk {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 24px;
 }
 
 // .nav-list {
