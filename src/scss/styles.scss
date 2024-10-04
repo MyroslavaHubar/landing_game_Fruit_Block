@@ -8,7 +8,9 @@
 @import './home.scss';
 @import './modal.scss';
 @import './reviews.scss';
-@import './fonts.scss': root {
+@import './fonts.scss';
+
+root {
   font-family: Montserrat, Lato, Avenir, Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 40px;
