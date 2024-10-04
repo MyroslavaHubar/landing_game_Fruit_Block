@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./scss/styles.scss" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit Block</title>
+  <link rel="stylesheet" href="./scss/styles.scss" />
+</head>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+<body>
+  <header class="header">
+    <load= src="./partials/header.html" />
+  </header>
+  <main>
+    <load= src="./partials/home.html" />
+    <load= src="./partials/gallery.html" />
+    <load= src="./partials/about.html" />
+    <load= src="./partials/benefits.html" />
+    <load= src="./partials/reviews.html" />
+    <load= src="./partials/fqa.html" />
+    <load= src="./partials/disclaimer.html" />
+  </main>
+  <footer>
+    <load= src="./partials/footer.html" />
+  </footer>
+  <load= src="./partials/modal.html" />
 
-    <script type="module" src="./main.js"></script>
-  </body>
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>

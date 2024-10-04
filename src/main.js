@@ -1,0 +1,10 @@
+import './js/about';
+import './js/benefits';
+import './js/disclaimer';
+import './js/footer';
+import './js/fqa';
+import './js/gallery';
+import './js/header';
+import './js/home';
+import './js/modal';
+import './js/reviews';
