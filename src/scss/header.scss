@@ -1,6 +1,21 @@
-// .header {
-//   padding: 20px 0;
-// }
+.header {
+  padding: 12px 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+}
+.header-logo-img {
+}
+.burger {
+  border: none;
+  background-color: transparent;
+}
+.burger-icon {
+}
 
 // .nav-list {
 //   display: flex;
