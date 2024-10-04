@@ -3,6 +3,10 @@
   background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
 }
 
+.container {
+  max-width: 1000px;
+}
+
 .header-nav-mob {
   @include media(desktop) {
     display: none;
@@ -36,6 +40,8 @@
 }
 
 .header-nav-desk {
+  gap: 183px;
+  justify-content: center;
   // @include media(mobile) {
   //   display: none;
   // }
@@ -63,7 +69,8 @@
   display: none;
   @include media(desktop) {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    // margin-right: 183px;
   }
 }
 
@@ -71,7 +78,8 @@
   display: none;
   @include media(desktop) {
     display: flex;
-    justify-content: space-between;
+
+    align-items: center;
   }
 }
 
