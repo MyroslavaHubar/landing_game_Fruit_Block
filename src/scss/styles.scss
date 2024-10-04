@@ -1,15 +1,15 @@
-@import url('./common/reset');
-@import './header.scss';
-@import './about.scss';
-@import './benefits.scss';
-@import './disclaimer.scss';
-@import './faq.scss';
-@import './footer.scss';
-@import './gallery.scss';
-@import './home.scss';
-@import './modal.scss';
-@import './reviews.scss';
-@import './fonts.scss';
+// @import url('./common/_reset.scss');
+@import url('./header.scss');
+@import url('./about.scss');
+@import url('./benefits.scss');
+@import url('./disclaimer.scss');
+@import url('./faq.scss');
+@import url('./footer.scss');
+@import url('./gallery.scss');
+@import url('./home.scss');
+@import url('./modal.scss');
+@import url('./reviews.scss');
+@import url('./fonts.scss');
 
 root {
   font-family: Montserrat, Lato, Avenir, Helvetica, Arial, sans-serif;
