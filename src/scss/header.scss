@@ -3,7 +3,7 @@
   background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
 }
 
-.header-nav {
+.header-nav-mob {
   display: flex;
   justify-content: space-between;
 }
@@ -14,8 +14,24 @@
 .burger {
   border: none;
   background-color: transparent;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
+
+.header-mob {
+  display: flex;
+  justify-content: space-between;
+}
+
 .burger-icon {
+}
+
+.header-nav-desk {
+  @include media(mobile) {
+    display: none;
+  }
 }
 
 // .nav-list {
