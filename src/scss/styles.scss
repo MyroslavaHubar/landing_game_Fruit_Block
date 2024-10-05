@@ -11,6 +11,7 @@
 @import url('./reviews.scss');
 @import url('./fonts.scss');
 @import url('./mob-menu.scss');
+@import url('./privacy.scss');
 
 :root {
   font-family: Montserrat, Lato, Helvetica, Arial, sans-serif;
@@ -30,7 +31,7 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
