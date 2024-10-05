@@ -8,9 +8,11 @@
   padding-top: 32px;
 
   @include media(desktop) {
-    width: 1200px;
-    height: 900px;
+    min-width: 1200px;
+    height: 870px;
     background-image: url('../img/home/hero-bg-desk.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   // @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -55,6 +57,13 @@
   color: #fafafa;
   margin-bottom: 16px;
 }
+.home-title-desk {
+  font-weight: 600;
+  font-size: 48px;
+
+  line-height: 1;
+  color: #fafafa;
+}
 
 .home-text {
   font-family: 'Lato', sans-serif;
@@ -62,6 +71,14 @@
   line-height: 1.6;
   color: #d6cecd;
   margin-bottom: 24px;
+  @include media(desktop) {
+    font-family: 'Lato', sans-serif;
+    max-width: 556px;
+    font-size: 24px;
+
+    line-height: 1.33333;
+    color: #d6cecd;
+  }
 }
 
 .home-img {
@@ -69,8 +86,8 @@
   justify-content: end;
   padding: 0;
   @include media(desktop) {
-    // min-width: 1200px;
-    // height: 841px;
+    // min-width: 483px;
+    // height: auto;
   }
 }
 
@@ -94,4 +111,41 @@
 .fence-mob-wrap {
   display: flex;
   justify-content: center;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.home-mob-wrap {
+  display: flex;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.home-img-fence {
+  display: flex;
+}
+.home-desk-wrap {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // margin-top: 48px;
+  }
+}
+
+.home-img-desk {
+  min-width: 483px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-fence-desk {
+  // @include media(mobile) {
+  //   display: none;
+  // }
+  position: absolute;
+  transform: translate(-12%, -92%);
 }
