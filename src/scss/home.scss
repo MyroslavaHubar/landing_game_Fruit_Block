@@ -40,8 +40,6 @@
   transition: background 0.3s ease;
 
   @include media(desktop) {
-    width: 169px;
-    height: 64px;
   }
 
   &:hover {
@@ -57,12 +55,13 @@
   color: #fafafa;
   margin-bottom: 16px;
 }
-.home-title-desk {
+.home-desk-title {
   font-weight: 600;
   font-size: 48px;
 
   line-height: 1;
   color: #fafafa;
+  margin-bottom: 16px;
 }
 
 .home-text {
@@ -72,12 +71,7 @@
   color: #d6cecd;
   margin-bottom: 24px;
   @include media(desktop) {
-    font-family: 'Lato', sans-serif;
-    max-width: 556px;
-    font-size: 24px;
-
-    line-height: 1.33333;
-    color: #d6cecd;
+    display: none;
   }
 }
 
@@ -86,8 +80,7 @@
   justify-content: end;
   padding: 0;
   @include media(desktop) {
-    // min-width: 483px;
-    // height: auto;
+    display: none;
   }
 }
 
@@ -102,6 +95,9 @@
 .home-button-icon {
   width: 81px;
   height: 21px;
+  @include media(desktop) {
+    display: unset;
+  }
 }
 
 .home-fence {
@@ -148,4 +144,40 @@
   // }
   position: absolute;
   transform: translate(-12%, -92%);
+}
+
+.home-button-icon-desk {
+  display: none;
+  @include media(desktop) {
+    display: unset;
+    width: 169px;
+    height: 64px;
+  }
+}
+
+.home-desk-wrap {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+.home-desk-text {
+}
+.home-desk-title {
+}
+.link-desk-home {
+}
+
+.home-desk-text {
+  font-family: 'Lato', sans-serif;
+  max-width: 556px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+
+  line-height: 1.33;
+  color: #d6cecd;
+}
+.home-fence-desk {
 }
