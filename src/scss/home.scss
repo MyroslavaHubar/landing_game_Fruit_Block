@@ -69,7 +69,8 @@
   justify-content: end;
   padding: 0;
   @include media(desktop) {
-    min-width: 362px;
+    // min-width: 1200px;
+    // height: 841px;
   }
 }
 
