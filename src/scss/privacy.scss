@@ -1,5 +1,9 @@
 .privacy {
   padding-top: 16px;
+
+  @include media(desktop) {
+    padding-top: 32px;
+  }
 }
 
 .privacy-button {
@@ -13,6 +17,10 @@
   letter-spacing: 0.06em;
   color: #004125;
   margin-bottom: 64px;
+
+  @include media(desktop) {
+    margin-bottom: 128px;
+  }
 }
 
 .privacy-button-link {
@@ -30,7 +38,28 @@
   text-align: center;
   color: #004125;
   margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }
+
+@include media(desktop) {
+  .privacy-title-first {
+    margin-bottom: 64px;
+  }
+
+  .privacy-content-end {
+    margin-bottom: 128px;
+  }
+
+  .privacy-title-br {
+    display: none;
+  }
+}
+
 .privacy-content {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -39,8 +68,17 @@
   line-height: 2.5;
   color: #0c0c0c;
   margin-bottom: 64px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.67;
+  }
 }
 
 .privacy-content-text {
   font-weight: 700;
+
+  @include media(desktop) {
+    font-weight: 600;
+  }
 }
