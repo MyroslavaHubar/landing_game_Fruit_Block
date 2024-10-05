@@ -3,7 +3,7 @@
   backdrop-filter: blur(50px);
   background-size: cover;
   background-position: center;
-  min-width: 359px;
+  min-width: 320px;
   height: auto;
   padding-top: 32px;
 
@@ -19,6 +19,11 @@
   //        only screen and (min-resolution: 192dpi) {
   //   background-image: url('../img/home/hero-bg-2x.jpg');
   // }
+}
+
+.home-container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .link-home {
@@ -48,6 +53,7 @@
   font-size: 32px;
   line-height: 1.5;
   color: #fafafa;
+  margin-bottom: 16px;
 }
 
 .home-text {
@@ -55,11 +61,21 @@
   font-size: 20px;
   line-height: 1.6;
   color: #d6cecd;
+  margin-bottom: 24px;
+}
+
+.home-img {
+  display: flex;
+  justify-content: end;
+  padding: 0;
 }
 
 .home-button {
+  display: flex;
+  justify-content: center;
   // width: 120px;
   // height: 42px;
+  margin-bottom: 16px;
 }
 
 .home-button-icon {
@@ -68,5 +84,10 @@
 }
 
 .home-fence {
-  width: 359px;
+  width: 100%;
+}
+
+.fence-mob-wrap {
+  display: flex;
+  justify-content: center;
 }

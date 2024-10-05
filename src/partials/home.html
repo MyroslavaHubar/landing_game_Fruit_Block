@@ -1,5 +1,5 @@
 <section class="home" id="home">
-  <div class="container">
+  <div class="container home-container">
     <h1 class="home-title">Fruit Block - Puzzle Legend</h1>
     <p class="home-text">
       Match Fruits, Solve Puzzles, and Become a Puzzle Legend!
@@ -11,7 +11,7 @@
       />
 
       <source
-        srcset="/img/home/hero.jpg 1x, /img/home/hero.jpg 2x"
+        srcset="/img/home/hero.png 1x, /img/home/hero.png 2x"
         media="(min-width: 320px)"
       />
       <img src="/img/home/hero.jpg" alt="foto" width="246" height="429" />
@@ -28,16 +28,12 @@
           height="21"
           aria-label="mobile menu open button"
         >
-          <use href="/img/sprite/sprite.svg#icon-google"></use>
+          <use href="./img/sprite/sprite.svg#icon-google"></use>
         </svg>
       </a>
     </div>
-    <img
-      src="/img/fence-mob.png"
-      alt="fence"
-      class="home-fence"
-      width="359"
-      height="74"
-    />
+    <div class="fence-mob-wrap">
+      <img src="/img/fence-mob.png" alt="fence" class="home-fence" />
+    </div>
   </div>
 </section>
