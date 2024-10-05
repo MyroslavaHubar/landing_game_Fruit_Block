@@ -8,3 +8,4 @@ import './js/header';
 import './js/home';
 import './js/modal';
 import './js/reviews';
+import './js/mob-menu';

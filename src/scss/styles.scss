@@ -10,8 +10,7 @@
 @import url('./modal.scss');
 @import url('./reviews.scss');
 @import url('./fonts.scss');
-
-:root {
+@import url('./mob-menu.scss'): root {
   font-family: Montserrat, Lato, Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
