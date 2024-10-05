@@ -2,6 +2,7 @@
   background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
   padding: 12px 0;
   min-width: 320px;
+
   // margin-bottom: 32px;
 }
 
@@ -13,6 +14,7 @@
   padding: 0;
 }
 .header-nav-mob {
+  display: flex;
   @include media(desktop) {
     margin-bottom: 48px;
     display: none;
