@@ -12,6 +12,7 @@
   line-height: 32px;
   letter-spacing: 0.06em;
   color: #004125;
+  margin-bottom: 64px;
 }
 
 .privacy-button-link {
@@ -19,4 +20,27 @@
   gap: 16px;
   justify-content: center;
   align-items: center;
+}
+
+.privacy-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  line-height: 1.33;
+  text-align: center;
+  color: #004125;
+  margin-bottom: 24px;
+}
+.privacy-content {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  line-height: 2.5;
+  color: #0c0c0c;
+  margin-bottom: 64px;
+}
+
+.privacy-content-text {
+  font-weight: 700;
 }
