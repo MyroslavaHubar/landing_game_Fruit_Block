@@ -1,6 +1,10 @@
 .header {
-  padding: 12px 0;
   background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+  padding: 12px 0;
+  // margin-bottom: 32px;
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 .container {
@@ -9,7 +13,7 @@
 
 .header-nav-mob {
   @include media(desktop) {
-    display: none;
+    margin-bottom: 48px;
   }
 }
 .header-logo {

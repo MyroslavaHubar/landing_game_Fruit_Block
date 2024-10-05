@@ -1,19 +1,72 @@
+.home {
+  background-image: url('../img/home/hero-bg.jpg');
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  background-position: center;
+  min-width: 359px;
+  height: auto;
+  padding-top: 32px;
+
+  @include media(desktop) {
+    width: 1200px;
+    height: 900px;
+    background-image: url('../img/home/hero-bg-desk.jpg');
+  }
+
+  // @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  //        only screen and (min--moz-device-pixel-ratio: 2),
+  //        only screen and (-o-min-device-pixel-ratio: 2/1),
+  //        only screen and (min-resolution: 192dpi) {
+  //   background-image: url('../img/home/hero-bg-2x.jpg');
+  // }
+}
+
 .link-home {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 128px;
-  height: 40px;
+  height: 42px;
   border-radius: 15px;
   background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
   text-decoration: none;
   transition: background 0.3s ease;
+
   @include media(desktop) {
     width: 169px;
     height: 64px;
   }
+
+  &:hover {
+    background-image: linear-gradient(90deg, #a8ff78 0%, #78ffd6 100%);
+  }
 }
 
-.link-home:hover {
-  background-image: linear-gradient(90deg, #a8ff78 0%, #78ffd6 100%);
+.home-title {
+  // max-width: 192px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #fafafa;
+}
+
+.home-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #d6cecd;
+}
+
+.home-button {
+  // width: 120px;
+  // height: 42px;
+}
+
+.home-button-icon {
+  width: 81px;
+  height: 21px;
+}
+
+.home-fence {
+  width: 359px;
 }
