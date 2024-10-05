@@ -68,6 +68,9 @@
   display: flex;
   justify-content: end;
   padding: 0;
+  @include media(desktop) {
+    min-width: 362px;
+  }
 }
 
 .home-button {
