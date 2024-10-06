@@ -14,10 +14,10 @@
 }
 
 body {
-  padding-top: 56px;
-  // @include media(desktop) {
-  //   padding-top: 90px;
-  // }
+  padding-top: 10px;
+  @include media(desktop) {
+    padding-top: 56px;
+  }
 }
 .container {
   max-width: 1000px;
@@ -112,6 +112,9 @@ body {
   gap: 24px;
 }
 
+.home-fence {
+  margin-bottom: 10px;
+}
 // .nav-list {
 //   display: flex;
 //   align-items: center;
