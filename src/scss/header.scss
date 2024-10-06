@@ -1,11 +1,24 @@
 .header {
   background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
   padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+
   // min-width: 320px;
 
   // margin-bottom: 32px;
 }
 
+body {
+  padding-top: 56px;
+  // @include media(desktop) {
+  //   padding-top: 90px;
+  // }
+}
 .container {
   max-width: 1000px;
 }
