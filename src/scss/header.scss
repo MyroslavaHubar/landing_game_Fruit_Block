@@ -14,7 +14,6 @@
   padding: 0;
 }
 .header-nav-mob {
-  display: flex;
   @include media(desktop) {
     margin-bottom: 48px;
     display: none;
