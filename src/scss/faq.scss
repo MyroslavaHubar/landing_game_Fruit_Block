@@ -8,10 +8,7 @@
   color: #0c0c0c;
 }
 
-.ac.ac-container-card {
-  border-left: none;
-  border-right: none;
-  border-top: 1px rgb(109, 111, 109) solid;
-  border-bottom: 1px rgb(109, 111, 109) solid;
-  background-color: transparent;
+.accordion-faq {
+  display: flex;
+  flex-direction: column;
 }
