@@ -90,6 +90,8 @@
   justify-content: end;
   padding: 0;
   @include media(desktop) {
+    position: absolute;
+    transform: translate(140%, 40%);
     min-width: 483px;
     height: 841px;
   }
@@ -100,7 +102,7 @@
   justify-content: center;
   @include media(desktop) {
     position: absolute;
-    transform: translate(-2%, -500%);
+    transform: translate(4%, 430%);
   }
 }
 
@@ -172,5 +174,8 @@
 .home-fence-desk {
 }
 .home-desk-text {
-  position: relative;
+  @include media(desktop) {
+    position: relative;
+    transform: translate(10px, 140%);
+  }
 }
