@@ -1,86 +1,88 @@
-// export function openMobMenu() {
-//   document.addEventListener('DOMContentLoaded', function () {
-//     const burger = document.getElementById('burger');
-//     const mobMenu = document.querySelector('.mob-menu');
-//     const closeMobMenu = document.querySelector('.close-mob-menu');
-//     const navMobMenu = document.querySelector('.nav-mob-menu');
+// export default function openMenu() {
+//   const menuBtn = document.getElementById('burger');
+//   const menu = document.querySelector('.mob-menu');
+//   const menuLinks = document.querySelectorAll('.mob-menu-list a');
 
-//     function disableScroll() {
-//       document.body.style.overflow = 'hidden';
+//   function toggleMenu() {
+//     if (menu.style.transform === 'translateX(0%)') {
+//       menu.style.transform = 'translateX(-100%)';
+//     } else {
+//       menu.style.transform = 'translateX(0%)';
 //     }
+//   }
 
-//     function enableScroll() {
-//       document.body.style.overflow = '';
+//   function closeMenu() {
+//     menu.style.transform = 'translateX(-100%)';
+//   }
+
+//   menuBtn.addEventListener('click', function (event) {
+//     toggleMenu();
+//     event.stopPropagation();
+//   });
+
+//   menuLinks.forEach(link => {
+//     link.addEventListener('click', function () {
+//       closeMenu();
+//     });
+//   });
+
+//   document.addEventListener('click', function (event) {
+//     if (
+//       menu.style.transform === 'translateX(0%)' &&
+//       !menu.contains(event.target) &&
+//       event.target !== menuBtn
+//     ) {
+//       closeMenu();
 //     }
-
-//     burger.addEventListener('click', function () {
-//       mobMenu.classList.add('active');
-//       disableScroll();
-//     });
-
-//     closeMobMenu.addEventListener('click', function () {
-//       mobMenu.classList.remove('active');
-//       enableScroll();
-//     });
-
-//     navMobMenu.addEventListener('click', function (event) {
-//       if (event.target.tagName === 'A') {
-//         const targetId = event.target.getAttribute('href');
-//         const targetElement = document.querySelector(targetId);
-
-//         if (targetElement) {
-//           window.scrollTo({
-//             top: targetElement.offsetTop,
-//             behavior: 'smooth',
-//           });
-
-//           mobMenu.classList.remove('active');
-//         }
-//       }
-//     });
 //   });
 // }
 
-export function openMobMenu() {
-  document.addEventListener('DOMContentLoaded', function () {
-    const burger = document.getElementById('burger');
-    const mobMenu = document.querySelector('.mob-menu');
-    const closeMobMenu = document.querySelector('.close-mob-menu');
-    const navMobMenu = document.querySelector('.nav-mob-menu');
+// document.addEventListener('DOMContentLoaded', openMenu);
 
-    function disableScroll() {
-      document.body.style.overflow = 'hidden';
+export default function openMenu() {
+  const menuBtn = document.getElementById('burger');
+  const closeBtn = document.querySelector('.close-mob-menu'); // Кнопка закриття
+  const menu = document.querySelector('.mob-menu');
+  const menuLinks = document.querySelectorAll('.mob-menu-list a');
+
+  // Функція для відкриття/закриття меню
+  function toggleMenu() {
+    if (menu.style.transform === 'translateX(0%)') {
+      menu.style.transform = 'translateX(-100%)';
+    } else {
+      menu.style.transform = 'translateX(0%)';
     }
+  }
 
-    function enableScroll() {
-      document.body.style.overflow = '';
+  // Функція для закриття меню
+  function closeMenu() {
+    menu.style.transform = 'translateX(-100%)';
+  }
+
+  menuBtn.addEventListener('click', function (event) {
+    toggleMenu();
+    event.stopPropagation();
+  });
+
+  closeBtn.addEventListener('click', function (event) {
+    closeMenu();
+    event.stopPropagation();
+  });
+
+  document.addEventListener('click', function (event) {
+    if (
+      menu.style.transform === 'translateX(0%)' &&
+      !menu.contains(event.target)
+    ) {
+      closeMenu();
     }
+  });
 
-    burger.addEventListener('click', function () {
-      mobMenu.classList.add('active');
-      disableScroll();
-    });
-
-    closeMobMenu.addEventListener('click', function () {
-      mobMenu.classList.remove('active');
-      enableScroll();
-    });
-
-    navMobMenu.addEventListener('click', function (event) {
-      if (event.target.tagName === 'A') {
-        const targetId = event.target.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth',
-          });
-
-          mobMenu.classList.remove('active');
-          enableScroll(); // Не забувайте відновити прокрутку
-        }
-      }
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      closeMenu();
     });
   });
 }
+
+document.addEventListener('DOMContentLoaded', openMenu);
