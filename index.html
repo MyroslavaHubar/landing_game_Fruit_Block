@@ -8,7 +8,7 @@
   <title>Fruit Block</title>
   
   <script type="module" crossorigin src="/landing_game_Fruit_Block/commonHelpers2.js"></script>
-  <link rel="stylesheet" href="/landing_game_Fruit_Block/assets/styles-052259c4.css">
+  <link rel="stylesheet" href="/landing_game_Fruit_Block/assets/styles-7fbecf35.css">
 </head>
 
 <body>
@@ -34,10 +34,10 @@
     <div class="header-desk">
       <ul class="header-nav-list">
         <li class="head-nav-item"><a href="#home" class="head-nav-link">Home</a></li>
-        <li class="head-nav-item"><a href="#" class="head-nav-link">Gallery</a></li>
-        <li class="head-nav-item"><a href="#" class="head-nav-link">About us</a></li>
-        <li class="head-nav-item"><a href="#" class="head-nav-link">Benefits</a></li>
-        <li class="head-nav-item"><a href="#" class="head-nav-link">Reviews</a></li>
+        <li class="head-nav-item"><a href="#gallery" class="head-nav-link">Gallery</a></li>
+        <li class="head-nav-item"><a href="#about" class="head-nav-link">About us</a></li>
+        <li class="head-nav-item"><a href="#benefits" class="head-nav-link">Benefits</a></li>
+        <li class="head-nav-item"><a href="#reviews" class="head-nav-link">Reviews</a></li>
         <li class="head-nav-item"><a href="#faq" class="head-nav-link">FAQ</a></li>
 
       </ul>
@@ -157,38 +157,29 @@
   
   <section class="mob-menu">
   <div class="container">
-    <button type="button" class="close-mob-menu">
-      <svg class="mob-menu-close-icon" width="28" height="28">
-        <use href="/landing_game_Fruit_Block/assets/sprite-063372db.svg#icon-x"></use>
-      </svg>
-    </button>
- <div class="container">
-    <nav class="m-m-nav">
-      <div class="header-mob">
-         <a href="./index.html" class="header-logo"
+    <div class="mob-menu-wrap">
+      <a href="./index.html" class="header-logo"
         ><img
-          src="/landing_game_Fruit_Block/assets/logo-desk-fb660de1.png"
+          src="data:image/png;base64,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"
           alt="logo"
           class="header-logo-img"
-        
+          width="50"
+          height="32"
       /></a>
-  
-      <button class="m-m-close" type="button">
-        <svg class="m-m-close-icon" width="24" height="24">
-          <use href="./img/sprite/sprite.svg#icon-burger"></use>
+      <button type="button" class="close-mob-menu">
+        <svg class="mob-menu-close-icon" width="18" height="18">
+          <use href="/landing_game_Fruit_Block/assets/sprite-063372db.svg#icon-x"></use>
         </svg>
       </button>
-    </nav>
-  </div>
+    </div>
     <nav class="nav-mob-menu">
       <ul class="mob-menu-list">
-        <li class="mob-menu-item"><a href="#">Home</a></li>
-        <li class="mob-menu-item"><a href="#">Gallery</a></li>
-        <li class="mob-menu-item"><a href="#">About us</a></li>
-        <li class="mob-menu-item"><a href="#">Benefits</a></li>
-         <li class="mob-menu-item"><a href="#">Reviews</a></li>
-        <li class="mob-menu-item"><a href="#">FAQ</a></li>
-        
+        <li class="mob-menu-item"><a href="#home">Home</a></li>
+        <li class="mob-menu-item"><a href="#gallery">Gallery</a></li>
+        <li class="mob-menu-item"><a href="#about">About us</a></li>
+        <li class="mob-menu-item"><a href="#benefits">Benefits</a></li>
+        <li class="mob-menu-item"><a href="#reviews">Reviews</a></li>
+        <li class="mob-menu-item"><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
   </div>
