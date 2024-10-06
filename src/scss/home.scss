@@ -1,12 +1,15 @@
 .home {
+  position: relative;
   background-image: url('../img/home/hero-bg.jpg');
   backdrop-filter: blur(50px);
   background-size: cover;
   background-position: center;
   min-width: 320px;
-  height: auto;
+  // height: auto;
+  min-height: 727px;
   padding-top: 32px;
   padding-bottom: 16px;
+  // margin-bottom: 27px;
 
   @include media(desktop) {
     min-width: 1200px;
@@ -14,6 +17,7 @@
     background-image: url('../img/home/hero-bg-desk.jpg');
     background-size: cover;
     background-position: center;
+    // margin-bottom: 127px;
   }
 
   // @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -39,6 +43,7 @@
   background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
   text-decoration: none;
   transition: background-image 0.3s ease;
+  margin-bottom: 40px;
 
   @include media(desktop) {
     width: 169px;
@@ -57,6 +62,7 @@
   line-height: 1.5;
   color: #fafafa;
   margin-bottom: 16px;
+  margin-top: 42px;
   @include media(desktop) {
     font-weight: 600;
     font-size: 48px;
@@ -91,7 +97,7 @@
   padding: 0;
   @include media(desktop) {
     position: absolute;
-    transform: translate(140%, 40%);
+    transform: translate(142%, 40%);
     min-width: 483px;
     height: 841px;
   }
@@ -100,9 +106,11 @@
 .home-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+
   @include media(desktop) {
     position: absolute;
-    transform: translate(4%, 430%);
+    transform: translate(4%, 220%);
   }
 }
 
@@ -176,6 +184,29 @@
 .home-desk-text {
   @include media(desktop) {
     position: relative;
-    transform: translate(10px, 140%);
+    transform: translate(10px, 94%);
+  }
+}
+
+// .fence-desk-wrap {
+//   display: none;
+//   @include media(desktop) {
+//     display: flex;
+//     justify-content: flex-start;
+//   }
+// }
+// .fence-desk {
+//   display: none;
+//   @include media(desktop) {
+//     position: absolute;
+//     display: block;
+//   }
+// }
+.home-fence-wrap {
+  position: absolute;
+  min-width: 359px;
+  transform: translate(-10%, -40%);
+  @include media(desktop) {
+    display: none;
   }
 }
