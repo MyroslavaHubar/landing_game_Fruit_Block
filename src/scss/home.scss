@@ -6,6 +6,7 @@
   min-width: 320px;
   height: auto;
   padding-top: 32px;
+  padding-bottom: 16px;
 
   @include media(desktop) {
     min-width: 1200px;
@@ -89,7 +90,7 @@
   justify-content: center;
   // width: 120px;
   // height: 42px;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 }
 
 .home-button-icon {
