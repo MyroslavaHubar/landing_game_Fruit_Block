@@ -5,11 +5,9 @@
   background-size: cover;
   background-position: center;
   min-width: 320px;
-  // height: auto;
+
   min-height: 727px;
   padding-top: 32px;
-  padding-bottom: 16px;
-  //
 
   @include media(desktop) {
     min-width: 1200px;
@@ -17,7 +15,6 @@
     background-image: url('../img/home/hero-bg-desk.jpg');
     background-size: cover;
     background-position: center;
-    // margin-bottom: 127px;
   }
 
   // @media only screen and (-webkit-min-device-pixel-ratio: 2),
