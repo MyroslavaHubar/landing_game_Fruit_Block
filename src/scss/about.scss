@@ -1,13 +1,70 @@
 .about {
   background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+  padding-top: 64px;
+  @include media(desktop) {
+    padding-top: 64px;
+  }
 }
-.container {
-}
+
 .about-title {
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 1.45833;
+  text-align: center;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    font-size: 32px;
+
+    line-height: 1.09375;
+    color: #0c0c0c;
+    margin-bottom: 64px;
+  }
 }
 .about-wrap {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    display: flex;
+  }
 }
 .about-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0c0c0c;
+  margin-bottom: 16px;
+  @include media(desktop) {
+    font-size: 24px;
+
+    line-height: 1.67;
+    margin-bottom: unset;
+  }
 }
+
 .about-span {
+  font-weight: 400;
+}
+
+.about-wrap {
+  margin-bottom: 24px;
+  display: flex; /* Використання flex для влаштування */
+  align-items: flex-start; /* Вирівнювання по верхньому краю */
+}
+
+.about-wrap:nth-child(odd) {
+  flex-direction: row; /* Перша та третя картинки зліва */
+}
+
+.about-wrap:nth-child(even) {
+  flex-direction: row-reverse; /* Друга картинка справа */
+}
+
+.about-text {
+  flex: 1; /* Забезпечує, що текст займає доступний простір */
+  margin-right: 24px; /* Відстань між текстом і зображенням */
+}
+
+.about-wrap picture {
+  flex: 0; /* Забезпечити, щоб зображення не розширювалося */
+  margin-left: 24px; /* Відстань між текстом і зображенням */
 }
