@@ -24,8 +24,6 @@
 .accordion-content {
   // display: flex;
   // align-items: center;
-  font-weight: 500;
-  font-size: 16px;
 
   padding: 16px 0;
   position: relative;
@@ -62,12 +60,18 @@
 
 .accordion-panel {
   position: relative;
-  margin-top: 8px;
+  // margin-top: 8px;
   color: #088d1c;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
 }
 
 .accordion-title {
   position: relative;
+  font-weight: 500;
+  font-size: 16px;
   color: #0c0c0c;
   cursor: pointer;
 }
@@ -75,9 +79,9 @@
 .accordion-title::before {
   content: '+';
   position: absolute;
-  top: 41%;
-  right: 52px;
-  transform: translateY(-70%);
+  top: 51%;
+  right: 0px;
+  transform: translateY(-50%);
   font-size: 3em;
   font-weight: 200;
 }
