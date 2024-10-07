@@ -1,3 +1,7 @@
+.faq {
+  padding-bottom: 88px;
+}
+
 .faq-title {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -8,7 +12,51 @@
   color: #0c0c0c;
 }
 
+.accordion-panel {
+  display: none;
+}
+
 .accordion-faq {
   display: flex;
   flex-direction: column;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0c0c0c;
+  cursor: pointer;
+  padding: 16px 0;
+  position: relative;
+}
+
+.accordion-title::before,
+.accordion-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    grey,
+    black,
+    grey,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.accordion-title::before {
+  top: 0;
+}
+
+.accordion-title::after {
+  bottom: 0;
+}
+
+.accordion-faq:last-child .accordion-title::after {
+  display: block;
 }
