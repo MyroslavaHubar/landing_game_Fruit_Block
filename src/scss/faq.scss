@@ -12,28 +12,27 @@
   color: #0c0c0c;
 }
 
-.accordion-panel {
-  display: none;
-}
+// .accordion-panel {
+//   display: none;
+// }
 
-.accordion-faq {
-  display: flex;
-  flex-direction: column;
-}
+// .accordion-faq {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.accordion-title {
-  display: flex;
-  justify-content: space-between;
+.accordion-content {
+  // display: flex;
+  // align-items: center;
   font-weight: 500;
   font-size: 16px;
-  color: #0c0c0c;
-  cursor: pointer;
+
   padding: 16px 0;
   position: relative;
 }
 
-.accordion-title::before,
-.accordion-title::after {
+.accordion-content::before,
+.accordion-content::after {
   content: '';
   position: absolute;
   left: 0;
@@ -49,14 +48,36 @@
   );
 }
 
-.accordion-title::before {
+.accordion-content::before {
   top: 0;
 }
 
-.accordion-title::after {
+.accordion-content::after {
   bottom: 0;
 }
 
-.accordion-faq:last-child .accordion-title::after {
+.accordion-faq:last-child .accordion-content::after {
   display: block;
+}
+
+.accordion-panel {
+  position: relative;
+  margin-top: 8px;
+  color: #088d1c;
+}
+
+.accordion-title {
+  position: relative;
+  color: #0c0c0c;
+  cursor: pointer;
+}
+
+.accordion-title::before {
+  content: '+';
+  position: absolute;
+  top: 41%;
+  right: 52px;
+  transform: translateY(-70%);
+  font-size: 3em;
+  font-weight: 200;
 }
