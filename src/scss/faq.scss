@@ -1,9 +1,15 @@
 .faq {
   padding-top: 40px;
-  padding-bottom: 88px;
+  padding-bottom: 45px;
+  background-image: url(../img/faq/fance-faq.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right bottom -20px;
   @include media(desktop) {
     padding-top: 100px;
-    padding-bottom: 156px;
+    padding-bottom: 150px;
+    background-size: 100% auto;
+    background-position: right bottom -75px;
   }
 }
 
