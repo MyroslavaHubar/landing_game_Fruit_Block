@@ -77,3 +77,13 @@
     margin: 0 auto;
   }
 }
+
+.section-padding {
+  padding-top: 95px;
+  margin-top: -95px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
