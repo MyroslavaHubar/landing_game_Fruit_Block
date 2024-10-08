@@ -41,7 +41,7 @@ const swiper = new Swiper('.gallerySwiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 3, // Встановлюємо 3 слайди
+  slidesPerView: 3,
   coverflowEffect: {
     rotate: 30,
     stretch: 0,
@@ -58,19 +58,18 @@ const swiper = new Swiper('.gallerySwiper', {
     clickable: true,
   },
   rewind: true,
-  initialSlide: 1, // Центральний слайд активний за замовчуванням
+  initialSlide: 1,
   breakpoints: {
     320: {
-      slidesPerView: 1, // 1 слайд на маленьких екранах
+      slidesPerView: 1,
     },
 
     1200: {
-      slidesPerView: 3, // 3 слайди на великих екранах
+      slidesPerView: 3,
     },
   },
 });
 
-// Додаємо клас center-slide до активного слайду
 swiper.on('slideChange', () => {
   const slides = document.querySelectorAll('.swiper-slide');
   slides.forEach(slide => slide.classList.remove('center-slide'));
@@ -78,6 +77,5 @@ swiper.on('slideChange', () => {
   slides[activeIndex].classList.add('center-slide');
 });
 
-// Додаємо клас до початкового активного слайду
 const initialSlides = document.querySelectorAll('.swiper-slide');
 initialSlides[swiper.initialSlide].classList.add('center-slide');
