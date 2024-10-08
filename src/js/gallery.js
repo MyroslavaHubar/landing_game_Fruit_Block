@@ -37,13 +37,13 @@
 // });
 
 // swiper.on('slideChange', () => {
-//   const slides = document.querySelectorAll('.swiper-slide');
+//   const slides = document.querySelectorAll('.g-s-slide');
 //   slides.forEach(slide => slide.classList.remove('center-slide'));
 //   const activeIndex = swiper.activeIndex;
 //   slides[activeIndex].classList.add('center-slide');
 // });
 
-// const initialSlides = document.querySelectorAll('.swiper-slide');
+// const initialSlides = document.querySelectorAll('.g-s-slide');
 // initialSlides[swiper.initialSlide].classList.add('center-slide');
 
 // import Swiper from 'swiper';
@@ -79,13 +79,13 @@
 // });
 
 // swiper.on('slideChange', () => {
-//   const slides = document.querySelectorAll('.swiper-slide');
+//   const slides = document.querySelectorAll('.g-s-slide');
 //   slides.forEach(slide => slide.classList.remove('center-slide'));
 //   const activeIndex = swiper.activeIndex;
 //   slides[activeIndex].classList.add('center-slide');
 // });
 
-// const initialSlides = document.querySelectorAll('.swiper-slide');
+// const initialSlides = document.querySelectorAll('.g-s-slide');
 // initialSlides[swiper.initialSlide].classList.add('center-slide');
 
 import Swiper from 'swiper';
@@ -126,7 +126,7 @@ const swiper = new Swiper('.gallerySwiper', {
 });
 
 swiper.on('slideChange', () => {
-  const slides = document.querySelectorAll('.swiper-slide');
+  const slides = document.querySelectorAll('.g-s-slide');
   slides.forEach(slide => slide.classList.remove('center-slide'));
 
   const activeIndex = swiper.activeIndex;
@@ -135,7 +135,7 @@ swiper.on('slideChange', () => {
   }
 });
 
-const initialSlides = document.querySelectorAll('.swiper-slide');
+const initialSlides = document.querySelectorAll('.g-s-slide');
 if (initialSlides[swiper.initialSlide]) {
   initialSlides[swiper.initialSlide].classList.add('center-slide');
 }
