@@ -88,15 +88,15 @@
 
 .swiper-slide {
   @include media(desktop) {
-    width: auto !important; // Це дозволяє слайдам автоматично регулювати ширину
-    height: auto !important; // Також забезпечте автоматичну висоту
-    margin: 0 !important; // Переконайтеся, що немає додаткових відступів
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
   }
 }
 
 .gallerySwiper {
   width: 100%;
-  height: 100%; /* Дайте висоту для слайдера */
+  height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
