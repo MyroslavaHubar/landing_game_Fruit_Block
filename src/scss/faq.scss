@@ -20,12 +20,13 @@ $_section_bottom_size_mob: calc(100% - 7px);
 }
 
 .container-faq {
-  padding-bottom: 48px;
-  background-image: url(../img/faq/fance-faq.png);
+  padding-bottom: 100px;
+  background-image: url(../img/faq/fance-faq-mob.png);
   background-size: 359px auto;
   background-repeat: no-repeat;
   background-position: right bottom -20px;
   @include media(desktop) {
+    background-image: url(../img/faq/fance-faq.png);
     padding-bottom: 45px;
     padding-bottom: 150px;
     background-size: 100% auto;
