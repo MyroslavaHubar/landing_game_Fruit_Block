@@ -42,7 +42,7 @@
 .swiper-wrapper {
   display: flex;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 140px;
 }
 
 .swiper-button-next {
@@ -79,5 +79,44 @@
     width: 1500px;
 
     transform: translate(-4%, -72%);
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  @include media(desktop) {
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+}
+
+.gallerySwiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  @include media(desktop) {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.swiper-slide-active {
+  transform: scale(1);
+
+  @include media(desktop) {
+    transform: scale(1.1);
+    transition: transform 0.3s;
   }
 }
