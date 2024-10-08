@@ -1,6 +1,7 @@
 .about {
   background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
   padding-top: 64px;
+  padding-bottom: 16px;
 }
 
 .about-title {
@@ -19,7 +20,7 @@
 
 .about-text {
   flex: 1;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   color: #0c0c0c;
   margin-bottom: 16px;
@@ -32,7 +33,7 @@
 }
 
 .about-span {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 // .about-wrap {
@@ -64,4 +65,19 @@
 .about-wrap img {
   margin-right: 24px;
 }
-// ава
+
+.about-relative {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.about-fence-img {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 1200px;
+
+    transform: translate(-3%, -72%);
+  }
+}
