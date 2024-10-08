@@ -30,13 +30,17 @@
   position: relative;
   display: block;
   text-align: left;
-  margin-bottom: 60px;
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .g-s-wrapper {
   display: flex;
   margin: 0;
-  margin-bottom: 140px;
+  @include media(desktop) {
+    margin-bottom: 140px;
+  }
 }
 
 .swiper-button-next {

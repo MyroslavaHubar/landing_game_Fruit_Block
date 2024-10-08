@@ -73,6 +73,11 @@ body {
   padding-right: 24px;
 }
 
+.head-nav-item:hover {
+  font-style: 18px;
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
 .head-nav-item:last-child {
   border-right: none;
   padding-right: 0;
