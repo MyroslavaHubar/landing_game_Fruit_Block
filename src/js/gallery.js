@@ -37,8 +37,7 @@ const swiper = new Swiper('.gallerySwiper', {
     },
   },
 });
-
-// var swiper = new Swiper('.gallerySwiper', {
+// const swiper = new Swiper('.gallerySwiper', {
 //   effect: 'coverflow',
 //   grabCursor: true,
 //   centeredSlides: true,
