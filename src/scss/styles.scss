@@ -79,10 +79,11 @@
 }
 
 .section-padding {
-  padding-top: 70px;
-  margin-top: -70px;
+  padding-top: 95px;
+  margin-top: -95px;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
