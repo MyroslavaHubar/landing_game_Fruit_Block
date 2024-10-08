@@ -3,7 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.aboutSwiper', {
+  const swiper = new Swiper('.gallerySwiper', {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
     spaceBetween: 0,
