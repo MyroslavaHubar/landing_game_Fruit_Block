@@ -2,27 +2,55 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.gallerySwiper', {
-    modules: [Navigation, Pagination],
-    slidesPerView: 1,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+const swiper = new Swiper('.gallerySwiper', {
+  modules: [Navigation, Pagination],
+  slidesPerView: 1,
+  spaceBetween: 0,
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  rewind: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 0,
     },
-    rewind: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
-  });
+  },
 });
+
+// var swiper = new Swiper('.gallerySwiper', {
+//   effect: 'coverflow',
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: 'auto',
+//   coverflowEffect: {
+//     rotate: 0,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: true,
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+// });

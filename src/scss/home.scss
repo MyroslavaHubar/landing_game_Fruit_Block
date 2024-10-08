@@ -176,8 +176,7 @@
   line-height: 1.33;
   color: #d6cecd;
 }
-.home-fence-desk {
-}
+
 .home-desk-text {
   @include media(desktop) {
     position: relative;
@@ -205,5 +204,16 @@
   transform: translate(-10%, -40%);
   @include media(desktop) {
     display: none;
+  }
+}
+
+.home-fence-desk {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 788px;
+    height: 85px;
+    transform: translate(-10%, 580%);
   }
 }
