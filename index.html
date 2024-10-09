@@ -8,9 +8,9 @@
   <title>Fruit Block</title>
   
   <script type="module" crossorigin src="/landing_game_Fruit_Block/commonHelpers2.js"></script>
-  <link rel="modulepreload" crossorigin href="/landing_game_Fruit_Block/assets/vendor-f8a42b41.js">
-  <link rel="stylesheet" href="/landing_game_Fruit_Block/assets/vendor-fef9b9da.css">
-  <link rel="stylesheet" href="/landing_game_Fruit_Block/assets/styles-ec3de296.css">
+  <link rel="modulepreload" crossorigin href="/landing_game_Fruit_Block/assets/vendor-fa94e50b.js">
+  <link rel="stylesheet" href="/landing_game_Fruit_Block/assets/vendor-83dc70da.css">
+  <link rel="stylesheet" href="/landing_game_Fruit_Block/assets/styles-ede0713e.css">
 </head>
 
 <body>
@@ -90,14 +90,14 @@
         </svg>
       </a>
     </div>
-    <div class="home-fence-wrap">
+    <!-- <div class="home-fence-wrap">
       <img
         src="../img/fence-mob.png"
         alt="fence"
         class="home-fence"
         width="359"
       />
-    </div>
+    </div> -->
     <div class="fence-desk-wrap">
       <img
         src="/landing_game_Fruit_Block/assets/hero-fence-desk-e16777bc.png"
@@ -110,34 +110,57 @@
   </div>
 </section>
 
-    <section class="gallery" id="gallery" class="section-padding">
+    <section class="gallery" id="gallery">
   <div class="container gallery-container">
     <h2 class="gallery-title">Gallery</h2>
     <div class="swiper gallerySwiper">
       <div class="swiper-wrapper g-s-wrapper">
+        <div class="swiper-slide g-s-slide center-slide">
+          <div class="gallery-item gallery-item-1">
+            <picture>
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-5-desk-027c8b1e.png 1x, /landing_game_Fruit_Block/assets/g-5-desk-2x-d33c9804.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-5-desk-027c8b1e.png 1x, /landing_game_Fruit_Block/assets/g-5-desk-2x-d33c9804.png 2x"
+                media="(min-width: 320px)"
+              />
+              <img
+                src="/landing_game_Fruit_Block/assets/g-5-d2ec091f.png"
+                alt="Slide 5"
+                width="306"
+                height="607"
+              />
+            </picture>
+          </div>
+        </div>
         <div class="swiper-slide g-s-slide">
           <div class="gallery-item gallery-item-1">
             <picture>
-              <source srcset="/landing_game_Fruit_Block/assets/g-1-desk-3d3dc674.png 1x, /landing_game_Fruit_Block/assets/g-1-desk-2x-04af43f9.png 2x" media="(min-width: 1200px)" />
-              <source srcset="/landing_game_Fruit_Block/assets/g-1-b0ea92a2.png 1x, /landing_game_Fruit_Block/assets/g-1-2x-66cf99b3.png 2x" media="(min-width: 320px)" />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-1-desk-3d3dc674.png 1x, /landing_game_Fruit_Block/assets/g-1-desk-2x-04af43f9.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-1-b0ea92a2.png 1x, /landing_game_Fruit_Block/assets/g-1-2x-66cf99b3.png 2x"
+                media="(min-width: 320px)"
+              />
               <img src="/landing_game_Fruit_Block/assets/g-1-b0ea92a2.png" alt="Slide 1" width="306" />
             </picture>
           </div>
         </div>
-        <div class="swiper-slide g-s-slide center-slide">
-          <div class="gallery-item gallery-item-1">
-            <picture>
-              <source srcset="/landing_game_Fruit_Block/assets/g-5-desk-027c8b1e.png 1x, /landing_game_Fruit_Block/assets/g-5-desk-2x-d33c9804.png 2x" media="(min-width: 1200px)" />
-              <source srcset="/landing_game_Fruit_Block/assets/g-5-d2ec091f.png 1x, /landing_game_Fruit_Block/assets/g-5-2x-d27ef6b1.png 2x" media="(min-width: 320px)" />
-              <img src="/landing_game_Fruit_Block/assets/g-5-d2ec091f.png" alt="Slide 5" width="306" height="607" />
-            </picture>
-          </div>
-        </div>
         <div class="swiper-slide g-s-slide">
           <div class="gallery-item gallery-item-1">
             <picture>
-              <source srcset="/landing_game_Fruit_Block/assets/g-2-desk-204455b5.png 1x, /landing_game_Fruit_Block/assets/g-2-desk-2x-a697673d.png 2x" media="(min-width: 1200px)" />
-              <source srcset="/landing_game_Fruit_Block/assets/g-2-931e9a90.png 1x, /landing_game_Fruit_Block/assets/g-2-2x-5dd526fc.png 2x" media="(min-width: 320px)" />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-2-desk-204455b5.png 1x, /landing_game_Fruit_Block/assets/g-2-desk-2x-a697673d.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-2-931e9a90.png 1x, /landing_game_Fruit_Block/assets/g-2-2x-5dd526fc.png 2x"
+                media="(min-width: 320px)"
+              />
               <img src="/landing_game_Fruit_Block/assets/g-2-931e9a90.png" alt="Slide 2" width="306" />
             </picture>
           </div>
@@ -145,8 +168,14 @@
         <div class="swiper-slide g-s-slide">
           <div class="gallery-item gallery-item-1">
             <picture>
-              <source srcset="/landing_game_Fruit_Block/assets/g-3-desk-bde8cda7.png 1x, /landing_game_Fruit_Block/assets/g-3-desk-2x-bce952d6.png 2x" media="(min-width: 1200px)" />
-              <source srcset="/landing_game_Fruit_Block/assets/g-3-3876e679.png 1x, /landing_game_Fruit_Block/assets/g-3-2x-4c2f2e03.png 2x" media="(min-width: 320px)" />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-3-desk-bde8cda7.png 1x, /landing_game_Fruit_Block/assets/g-3-desk-2x-bce952d6.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-3-3876e679.png 1x, /landing_game_Fruit_Block/assets/g-3-2x-4c2f2e03.png 2x"
+                media="(min-width: 320px)"
+              />
               <img src="/landing_game_Fruit_Block/assets/g-3-3876e679.png" alt="Slide 3" width="306" />
             </picture>
           </div>
@@ -154,217 +183,48 @@
         <div class="swiper-slide g-s-slide">
           <div class="gallery-item gallery-item-1">
             <picture>
-              <source srcset="/landing_game_Fruit_Block/assets/g-4-desk-fc863dbd.png 1x, /landing_game_Fruit_Block/assets/g-4-desk-2x-85fea6ae.png 2x" media="(min-width: 1200px)" />
-              <source srcset="/landing_game_Fruit_Block/assets/g-4-bd696431.png 1x, /landing_game_Fruit_Block/assets/g-4-2x-9498d69b.png 2x" media="(min-width: 320px)" />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-4-desk-fc863dbd.png 1x, /landing_game_Fruit_Block/assets/g-4-desk-2x-85fea6ae.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="/landing_game_Fruit_Block/assets/g-4-bd696431.png 1x, /landing_game_Fruit_Block/assets/g-4-2x-9498d69b.png 2x"
+                media="(min-width: 320px)"
+              />
               <img src="/landing_game_Fruit_Block/assets/g-4-bd696431.png" alt="Slide 4" width="306" />
             </picture>
           </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
-    <img src="/landing_game_Fruit_Block/assets/gallery-fence-desk-d8b72e85.png" alt="fence" class="gallery-fence-img" width="1577" height="81" />
+    <div class="navigate-btns">
+      <div class="gallery-swiper-btn-prev">
+        <img src="../img/gallery/l-arrow.png" alt="Previous" />
+      </div>
+      <div class="gallery-swiper-btn-next">
+        <img src="../img/gallery/r-arrow.png" alt="Next" />
+      </div>
+    </div>
+    <img
+      src="/landing_game_Fruit_Block/assets/gallery-fence-mob-7715e6cf.png"
+      alt="fence"
+      class="gallery-fence-mob-img"
+      width="359"
+      height="82"
+    />
+    <img
+      src="/landing_game_Fruit_Block/assets/gallery-fence-desk-d8b72e85.png"
+      alt="fence"
+      class="gallery-fence-desk-img"
+      width="1577"
+      height="199"
+    />
   </div>
 </section>
 
-<!-- <section class="gallery" id="gallery">
-  <div class="container">
-    <h2 class="gallery-title">Gallery</h2>
-    <div class="gallery-container">
-      <button class="gallery-controls-previous"></button>
 
-      <div class="gallery-item gallery-item-1">
-        <picture>
-          <source
-            srcset="
-              ./img/gallery/g-1-desk.png    1x,
-              ./img/gallery/g-1-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/gallery/g-1.png 1x, ./img/gallery/g-1-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./img/gallery/g-1.png"
-            alt="Slide 1"
-            width="306"
-            data-index="1"
-          />
-        </picture>
-      </div>
-
-      <div class="gallery-item gallery-item-2">
-        <picture>
-          <source
-            srcset="
-              ./img/gallery/g-5-desk.png    1x,
-              ./img/gallery/g-5-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/gallery/g-5.png 1x, ./img/gallery/g-5-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./img/gallery/g-5.png"
-            alt="Slide 5"
-            width="306"
-            height="607"
-            data-index="2"
-          />
-        </picture>
-      </div>
-
-      <div class="gallery-item gallery-item-3">
-        <picture>
-          <source
-            srcset="
-              ./img/gallery/g-2-desk.png    1x,
-              ./img/gallery/g-2-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/gallery/g-2.png 1x, ./img/gallery/g-2-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./img/gallery/g-2.png"
-            alt="Slide 2"
-            width="306"
-            data-index="3"
-          />
-        </picture>
-      </div>
-
-      <div class="gallery-item gallery-item-4">
-        <picture>
-          <source
-            srcset="
-              ./img/gallery/g-3-desk.png    1x,
-              ./img/gallery/g-3-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/gallery/g-3.png 1x, ./img/gallery/g-3-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./img/gallery/g-3.png"
-            alt="Slide 3"
-            width="306"
-            data-index="4"
-          />
-        </picture>
-      </div>
-
-      <div class="gallery-item gallery-item-5">
-        <picture>
-          <source
-            srcset="
-              ./img/gallery/g-4-desk.png    1x,
-              ./img/gallery/g-4-desk-2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/gallery/g-4.png 1x, ./img/gallery/g-4-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./img/gallery/g-4.png"
-            alt="Slide 4"
-            width="306"
-            data-index="5"
-          />
-        </picture>
-      </div>
-      <button class="gallery-controls-next"></button>
-    </div>
-    <img
-      src="./img/gallery/gallery-fence-desk.png"
-      alt="fence"
-      class="gallery-fence-img"
-      width="1577"
-      height="81"
-    />
-  </div>
-</section> -->
-
-<!-- NEW -->
-
-<!-- <section class="gallery" id="gallery">
-  <div class="container">
-    <h2 class="gallery-title">Gallery</h2>
-    <div class="swiper-container">
-      <div class="swiper gallerySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-                  ./img/gallery/g-1-desk.png    1x,
-                  ./img/gallery/g-1-desk-2x.png 2x
-                " media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/g-1.png 1x, ./img/gallery/g-1-2x.png 2x" media="(min-width: 320px)" />
-              <img src="./img/gallery/g-1.png" alt="Slide 1" width="306" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-                  ./img/gallery/g-5-desk.png 1x,
-                  ./img/gallery/g-5-desk-2x.png 2x
-                " media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/g-5.png 1x, ./img/gallery/g-5-2x.png 2x" media="(min-width: 320px)" />
-              <img src="./img/gallery/g-5.png" alt="Slide 5" width="306" height="607" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-                  ./img/gallery/g-2-desk.png    1x,
-                  ./img/gallery/g-2-desk-2x.png 2x
-                " media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/g-2.png 1x, ./img/gallery/g-2-2x.png 2x" media="(min-width: 320px)" />
-              <img src="./img/gallery/g-2.png" alt="Slide 2" width="306" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-                  ./img/gallery/g-3-desk.png    1x,
-                  ./img/gallery/g-3-desk-2x.png 2x
-                " media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/g-3.png 1x, ./img/gallery/g-3-2x.png 2x" media="(min-width: 320px)" />
-              <img src="./img/gallery/g-3.png" alt="Slide 3" width="306" />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-                  ./img/gallery/g-4-desk.png    1x,
-                  ./img/gallery/g-4-desk-2x.png 2x
-                " media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/g-4.png 1x, ./img/gallery/g-4-2x.png 2x" media="(min-width: 320px)" />
-              <img src="./img/gallery/g-4.png" alt="Slide 4" width="306" />
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div class="navigate-btns">
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-      <img class="gallery-fence-img" src="./img/gallery/gallery-fence-desk.png" alt="fence" width="1577" height="81" />
-    </div>
-</section> -->
     <section class="about" id="about" class="section-padding">
-  <div class="container">
+  <div class="container about-container">
     <h2 class="about-title">About us</h2>
     <div class="about-wrap">
       <p class="about-text">
