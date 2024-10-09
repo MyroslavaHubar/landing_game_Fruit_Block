@@ -98,6 +98,7 @@
 //Modal//
 .benefit-modal {
   visibility: hidden;
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -105,6 +106,7 @@
   top: 0;
   background-color: #30621980;
   transition: visibility 0s, opacity 0.3s easy;
+  z-index: 999;
 }
 
 .benefit-modal-show {
