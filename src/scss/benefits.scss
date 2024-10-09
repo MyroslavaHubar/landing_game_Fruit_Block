@@ -114,7 +114,7 @@
 
   @include media(desktop) {
     padding: 24px 36px;
-    width: 714px;
+    min-width: 714px;
     height: 216px;
     display: flex;
     flex-direction: row;
@@ -157,4 +157,5 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
+  min-width: 200px;
 }
