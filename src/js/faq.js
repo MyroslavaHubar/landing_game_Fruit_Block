@@ -24,10 +24,5 @@ window.addEventListener('DOMContentLoaded', () => {
   if (accordionFaq.length > 0) {
     const firstAccordion = accordionFaq[0];
     const firstPanel = firstAccordion.querySelector('.accordion-panel');
-
-    if (firstPanel) {
-      firstAccordion.classList.add('active');
-      firstPanel.style.height = firstPanel.scrollHeight + 'px';
-    }
   }
 });

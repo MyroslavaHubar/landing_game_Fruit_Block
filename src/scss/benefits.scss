@@ -8,7 +8,7 @@
   }
 }
 .benefits-fence-mob-img {
-  width: 359px;
+  width: 400px;
   transform: translate(-3%, 46%);
   @include media(desktop) {
     display: none;
@@ -103,7 +103,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #0041257c;
+  background-color: #30621980;
   transition: visibility 0s, opacity 0.3s easy;
 }
 
