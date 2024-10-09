@@ -28,6 +28,14 @@
 .home-container {
   padding-right: 0;
   padding-left: 0;
+  padding-bottom: 45px;
+  background-image: url(../img/fence-mob.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right bottom -20px;
+  @include media(desktop) {
+    background-image: none;
+  }
 }
 
 .link-home {
@@ -103,7 +111,7 @@
 .home-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   @include media(desktop) {
     position: absolute;
@@ -198,14 +206,14 @@
 //     display: block;
 //   }
 // }
-.home-fence-wrap {
-  position: absolute;
-  min-width: 359px;
-  transform: translate(-10%, -40%);
-  @include media(desktop) {
-    display: none;
-  }
-}
+// .home-fence-wrap {
+//   position: absolute;
+//   min-width: 359px;
+//   transform: translate(-10%, -40%);
+//   @include media(desktop) {
+//     display: none;
+//   }
+// }
 
 .home-fence-desk {
   display: none;
