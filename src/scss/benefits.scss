@@ -50,6 +50,7 @@
   gap: 16px;
   width: 224px;
   height: 210px;
+  cursor: pointer;
 
   @include media(desktop) {
     row-gap: 16px;
@@ -83,14 +84,19 @@
 
 //Modal//
 .benefit-modal {
-  display: none;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 99;
   background-color: #004125;
+  transition: visibility 0s, opacity 0.3s easy;
+}
+
+.benefit-modal-show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .benefits-modal-card {
@@ -106,14 +112,49 @@
   box-shadow: inset 0px 10px 10px 0 #b0da3b, inset -0px -10px 10px 0 #9abf34;
   background: #fff;
 
-  //   @include media(desktop) {
-  //     row-gap: 16px;
-  //     width: 243px;
-  //     height: 241px;
-  //   }
+  @include media(desktop) {
+    padding: 24px 36px;
+    width: 714px;
+    height: 216px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 263px auto;
+  }
 }
 
-.benefits-modal-card-text {
+.benefits-modal-card .benefits-card-text {
   padding: 0 27px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: #0c0c0c;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.67;
+    padding: 0;
+    width: 450px;
+  }
+}
+
+.benefits-modal-card .benefits-card-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #183f1e;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.benefits-modal-card .benefits-card-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
