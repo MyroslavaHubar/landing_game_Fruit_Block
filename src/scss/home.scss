@@ -16,13 +16,6 @@
     background-size: cover;
     background-position: center;
   }
-
-  // @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  //        only screen and (min--moz-device-pixel-ratio: 2),
-  //        only screen and (-o-min-device-pixel-ratio: 2/1),
-  //        only screen and (min-resolution: 192dpi) {
-  //   background-image: url('../img/home/hero-bg-2x.jpg');
-  // }
 }
 
 .home-container {
@@ -61,7 +54,6 @@
 }
 
 .home-title {
-  // max-width: 192px;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.5;
@@ -111,7 +103,6 @@
 .home-button {
   display: flex;
   justify-content: center;
-  // margin-bottom: 20px;
 
   @include media(desktop) {
     position: absolute;
@@ -128,21 +119,6 @@
   }
 }
 
-// .fence-mob-wrap {
-//   display: flex;
-//   justify-content: center;
-//   @include media(desktop) {
-//     display: none;
-//   }
-// }
-
-// .home-mob-wrap {
-//   display: flex;
-//   @include media(desktop) {
-//     display: none;
-//   }
-// }
-
 .home-desk-wrap {
   @include media(desktop) {
     display: flex;
@@ -152,12 +128,6 @@
   }
 }
 
-// .home-img-desk {
-//   min-width: 483px;
-//   display: flex;
-//   justify-content: flex-end;
-// }
-
 .home-button-icon-desk {
   display: none;
   @include media(desktop) {
@@ -165,13 +135,6 @@
     width: 169px;
     height: 64px;
   }
-}
-
-.home-desk-text {
-}
-.home-desk-title {
-}
-.link-desk-home {
 }
 
 .home-desk-text {
@@ -191,29 +154,6 @@
     transform: translate(10px, 94%);
   }
 }
-
-// .fence-desk-wrap {
-//   display: none;
-//   @include media(desktop) {
-//     display: flex;
-//     justify-content: flex-start;
-//   }
-// }
-// .fence-desk {
-//   display: none;
-//   @include media(desktop) {
-//     position: absolute;
-//     display: block;
-//   }
-// }
-// .home-fence-wrap {
-//   position: absolute;
-//   min-width: 359px;
-//   transform: translate(-10%, -40%);
-//   @include media(desktop) {
-//     display: none;
-//   }
-// }
 
 .home-fence-desk {
   display: none;

@@ -1,41 +1,21 @@
 .reviews {
   background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
-  position: relative;
-}
-
-.reviews::before,
-.reviews::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 20px;
-  background: inherit;
-  filter: blur(10px);
-  opacity: 2.7;
-}
-
-.reviews::before {
-  top: -15px;
-}
-
-.reviews::after {
-  bottom: -15px;
 }
 
 .reviews-container {
-  padding: 100px 20px;
   background-image: url(../img/reviews/fence2-mob.png);
-  background-size: 359px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: right -30px bottom;
+  background-position: right bottom -23px;
+  padding-bottom: 80px;
+  padding-top: 40px;
 }
 
-// .reviews-swiper {
-//   overflow: hidden;
-//   position: relative;
-//   padding-bottom: 10px;
-// }
+.reviews-swiper {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
+}
 
 .reviews-title {
   font-weight: 600;

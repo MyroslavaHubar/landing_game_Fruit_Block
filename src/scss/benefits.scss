@@ -1,15 +1,28 @@
 .benefits {
-  padding: 64px 0;
-
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 10px;
   @include media(desktop) {
-    padding: 128px 0;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+.benefits-fence-mob-img {
+  width: 359px;
+  transform: translate(-3%, 46%);
+  @include media(desktop) {
+    display: none;
   }
 }
 
-@include media(desktop) {
-  .benefits-container {
-    padding-left: 108px;
-    padding-right: 108px;
+.benefits-fence-desk-img {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 1200px;
+
+    transform: translate(-3%, -18%);
   }
 }
 
@@ -90,7 +103,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #004125;
+  background-color: #0041257c;
   transition: visibility 0s, opacity 0.3s easy;
 }
 

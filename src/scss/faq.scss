@@ -1,5 +1,5 @@
-$_section_bottom_size: calc(100% - 14px);
-$_section_bottom_size_mob: calc(100% - 7px);
+$_section_bottom_size: calc(100% - 17px);
+$_section_bottom_size_mob: calc(100% - 15px);
 
 .faq {
   padding-top: 40px;
@@ -22,15 +22,15 @@ $_section_bottom_size_mob: calc(100% - 7px);
 .container-faq {
   padding-bottom: 110px;
   background-image: url(../img/faq/fance-faq-mob.png);
-  background-size: 359px auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: right bottom -20px;
+  background-position: right bottom -10px;
   @include media(desktop) {
     background-image: url(../img/faq/fance-faq.png);
     padding-bottom: 45px;
     padding-bottom: 150px;
     background-size: 100% auto;
-    background-position: right bottom -75px;
+    background-position: right bottom -73px;
   }
 }
 
