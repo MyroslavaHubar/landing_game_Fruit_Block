@@ -1,6 +1,5 @@
 import './js/about';
 import './js/benefits';
-import './js/disclaimer';
 import './js/footer';
 import './js/faq';
 import './js/gallery';
