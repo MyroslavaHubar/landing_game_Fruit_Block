@@ -12,6 +12,8 @@ new Swiper('.reviews-swiper', {
     delay: 4000,
   },
 
+  loop: true,
+
   breakpoints: {
     1200: {
       slidesPerView: 2,

@@ -9,6 +9,14 @@
   background-position: right bottom -13px;
   padding-bottom: 80px;
   padding-top: 40px;
+  @include media(desktop) {
+    padding-top: 60px;
+    background-image: url(../img/reviews/fence2-desk.png);
+    background-position: right bottom -102px;
+    padding-bottom: 135px;
+    padding-left: 129px !important;
+    padding-right: 129px !important;
+  }
 }
 
 .reviews-swiper {
@@ -32,6 +40,9 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 16px;
+  @include media(desctop) {
+    gap: 10px;
+  }
 }
 
 .reviews-name {
@@ -39,9 +50,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 2.5;
+  @include media(desctop) {
+    font-size: 24px;
+    line-height: 1.7;
+  }
 }
 
 .reviews-description {
   font-weight: 500;
   font-size: 16px;
+  @include media(desctop) {
+    font-size: 24px;
+    line-height: 1.67;
+  }
 }
