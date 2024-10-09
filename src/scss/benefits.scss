@@ -1,21 +1,45 @@
 .benefits {
-  padding-top: 40px;
-  padding-bottom: 88px;
+  padding: 64px 0;
+
+  @include media(desktop) {
+    padding: 128px 0;
+  }
+}
+
+@include media(desktop) {
+  .benefits-container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
 }
 
 .benefits-title {
-  margin-bottom: 48px;
+  margin-bottom: 38px;
   text-align: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.46;
+
+  @include media(desktop) {
+    margin-bottom: 88px;
+    font-size: 32px;
+    line-height: 1.1;
+  }
 }
 
 .benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 26px;
   align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+    column-gap: 143px;
+  }
 }
 
 .benefits-card {
@@ -26,6 +50,12 @@
   gap: 16px;
   width: 224px;
   height: 210px;
+
+  @include media(desktop) {
+    row-gap: 16px;
+    width: 243px;
+    height: 241px;
+  }
 }
 
 .benefits-card:hover {
@@ -49,4 +79,41 @@
   font-size: 20px;
   text-align: center;
   color: #183f1e;
+}
+
+//Modal//
+.benefit-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #004125;
+}
+
+.benefits-modal-card {
+  border-radius: 16px;
+  margin: 130px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 216px;
+  padding: 24px 0;
+  box-shadow: inset 0px 10px 10px 0 #b0da3b, inset -0px -10px 10px 0 #9abf34;
+  background: #fff;
+
+  //   @include media(desktop) {
+  //     row-gap: 16px;
+  //     width: 243px;
+  //     height: 241px;
+  //   }
+}
+
+.benefits-modal-card-text {
+  padding: 0 27px;
+  text-align: center;
 }
