@@ -30,3 +30,38 @@
   background-repeat: no-repeat;
   background-position: right -30px bottom;
 }
+
+// .reviews-swiper {
+//   overflow: hidden;
+//   position: relative;
+//   padding-bottom: 10px;
+// }
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.46;
+  text-align: center;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+
+.reviews-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.reviews-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.reviews-description {
+  font-weight: 500;
+  font-size: 16px;
+}
