@@ -3,17 +3,18 @@ export default function openMenu() {
   const closeBtn = document.querySelector('.close-mob-menu');
   const menu = document.querySelector('.mob-menu');
   const menuLinks = document.querySelectorAll('.mob-menu-list a');
+  const menuWrap = document.querySelector('.mob-menu-wrap');
 
   function toggleMenu() {
-    if (menu.style.transform === 'translateX(0%)') {
-      menu.style.transform = 'translateX(-100%)';
+    if (menu.style.transform === 'translateY(0%)') {
+      menu.style.transform = 'translateY(-100%)';
     } else {
-      menu.style.transform = 'translateX(0%)';
+      menu.style.transform = 'translateY(0%)';
     }
   }
 
   function closeMenu() {
-    menu.style.transform = 'translateX(-100%)';
+    menu.style.transform = 'translateY(-100%)';
   }
 
   menuBtn.addEventListener('click', function (event) {
@@ -28,8 +29,8 @@ export default function openMenu() {
 
   document.addEventListener('click', function (event) {
     if (
-      menu.style.transform === 'translateX(0%)' &&
-      !menu.contains(event.target)
+      menu.style.transform === 'translateY(0%)' &&
+      !menuWrap.contains(event.target)
     ) {
       closeMenu();
     }
