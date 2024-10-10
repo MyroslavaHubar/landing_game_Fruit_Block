@@ -7,10 +7,6 @@
   width: 100%;
 
   z-index: 1000;
-
-  // min-width: 320px;
-
-  // margin-bottom: 32px;
 }
 
 body {
@@ -32,8 +28,7 @@ body {
     display: none;
   }
 }
-.header-logo {
-}
+
 .header-logo-img {
   width: 50px;
   height: 32px;
@@ -56,13 +51,8 @@ body {
   justify-content: space-between;
 }
 
-.burger-icon {
-}
-
 .head-nav-item {
-  // font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-
   font-size: 17px;
   line-height: 1.88;
   letter-spacing: 0.06em;

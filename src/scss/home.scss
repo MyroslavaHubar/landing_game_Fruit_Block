@@ -12,24 +12,9 @@
     min-width: 1200px;
     height: 870px;
     background-image: url('../img/home/hero-bg-desk.jpg');
+    backdrop-filter: blur(50px);
     background-size: cover;
     background-position: center;
-  }
-}
-
-@include media(desktop) {
-  .home::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 10px 14px 9px rgb(0 50 0 / 83%),
-      0px 10px 30px rgb(110 127 89 / 77%);
-    z-index: -1;
-    filter: blur(9px);
-
-    height: calc(100%);
   }
 }
 
@@ -169,6 +154,6 @@
     position: absolute;
     width: 801px;
     height: 85px;
-    transform: translate(-5%, 586%);
+    transform: translate(-5%, 579%);
   }
 }
