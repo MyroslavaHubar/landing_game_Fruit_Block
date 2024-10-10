@@ -85,10 +85,11 @@
 .home-img {
   display: flex;
   justify-content: end;
+  position: relative;
   padding: 0;
   @include media(desktop) {
     position: absolute;
-    transform: translate(147%, 44%);
+    transform: translate(142%, 44%);
     min-width: 483px;
     height: 841px;
   }
