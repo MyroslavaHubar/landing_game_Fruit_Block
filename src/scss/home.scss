@@ -40,7 +40,7 @@
   background-image: url(../img/fence-mob.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: right bottom -20px;
+  background-position: right bottom;
   @include media(desktop) {
     background-image: none;
   }
