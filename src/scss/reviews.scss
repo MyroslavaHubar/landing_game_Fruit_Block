@@ -32,6 +32,11 @@
   text-align: center;
   color: #0c0c0c;
   margin-bottom: 24px;
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 64px;
+  }
 }
 
 .reviews-item {
@@ -40,7 +45,7 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 16px;
-  @include media(desctop) {
+  @include media(desktop) {
     gap: 10px;
   }
 }
@@ -50,17 +55,31 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 2.5;
-  @include media(desctop) {
+  @include media(desktop) {
     font-size: 24px;
     line-height: 1.7;
   }
 }
 
+.reviews-slide-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .reviews-description {
   font-weight: 500;
   font-size: 16px;
-  @include media(desctop) {
+  @include media(desktop) {
     font-size: 24px;
     line-height: 1.67;
+    width: 459px !important;
+  }
+}
+
+@include media(desktop) {
+  .reviews-description.reviews-slide-card {
+    box-sizing: border-box;
+    width: 1200px !important;
   }
 }

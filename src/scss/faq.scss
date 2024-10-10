@@ -44,6 +44,8 @@ $_section_bottom_size_mob: calc(100% - 15px);
 
   @include media(desktop) {
     margin-bottom: 64px;
+    font-size: 32px;
+    line-height: 1.1;
   }
 }
 
