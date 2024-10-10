@@ -57,6 +57,7 @@
 .about-wrap {
   margin-bottom: 24px;
   @include media(desktop) {
+    align-items: center;
     margin-bottom: 64px;
     display: flex;
     flex-direction: row-reverse;

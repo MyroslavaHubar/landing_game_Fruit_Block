@@ -28,6 +28,7 @@
 }
 
 .gallerySwiper {
+  position: relative;
   width: calc(100% - (63px - 16px) * 2);
   @include media(desktop) {
     width: calc(100% - 97px * 2);
